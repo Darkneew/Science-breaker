@@ -1,0 +1,71 @@
+@keyframes fadeOut {
+    0% {top:0vh;}
+    50% {top:110vh;}
+    100% {top:110vh;}
+}
+
+html {
+    background-image: url(../assets/backgrounds/background1.png);
+    background-repeat:repeat-x;
+    background-color:#303342;
+    text-align : center;
+    font-size:30px;
+    border:0;
+    margin:0;
+    padding:0;
+}
+
+#loading {
+    height: 100%;
+    width: 100%;
+    background-image: url(../assets/backgrounds/background1.png);
+    background-repeat:repeat-x;
+    background-color:#303342;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    font-size: 20vh;
+    text-align: center;
+    color: #eeeeee;
+    font-weight: bold;
+    padding-top: 35vh;
+}
+
+canvas {
+    border:0;
+    padding:0;
+    margin:0;
+    -webkit-box-shadow: 5px 3px 17px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 5px 3px 17px 0px rgba(0,0,0,0.41);   
+    box-shadow: 5px 3px 17px 0px rgba(0,0,0,0.41);
+    border-radius: 10px;
+}
+
+a {
+    color:inherit;
+    text-decoration:none;
+}
+
+button {
+    background-color:inherit;
+    color: white;
+    font-family: inherit;
+    border:0;
+    border-radius: 50%;
+    transition: background 250ms ease-in-out, 
+        transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline:none;  
+    cursor:pointer;
+}
+
+#pause {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 12px;
+    left:20px;
+    background-image: url(./assets/HUD/pause.png)
+}
